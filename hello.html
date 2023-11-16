@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background-color: #222;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .author-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 20px auto;
+      }
+
+      h1 {
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        margin: 20px auto;
+        background-color: #4caf50;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .button img {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px; 
+        background-color: #4caf50; 
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+
+      .button:hover img {
+        background-color: #45a049; 
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 40px;
+      }
+
+      .github-link {
+        color: #4caf50;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .github-link:hover {
+        text-decoration: underline;
+      }
+
+      .emoji {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://media.licdn.com/dms/image/C4D03AQHyB3yKHRAbQQ/profile-displayphoto-shrink_800_800/0/1667936096177?e=1705536000&v=beta&t=ppNADJnGqidJqoGa1I6UN7GZ9ZzoDVV1JdYlokj3Y-s"
+        alt="Author's Photo"
+        class="author-photo"
+      />
+      <h1>Hi👋, Welcome to LinkLift</h1>
+      <h2>🚀 Bypass paywalls and login prompts to enjoy unrestricted access</h2>
+      <p>
+        This extension will automatically redirect you to the cached version of
+        any Medium article that is behind a paywall or a sign-in prompt. You
+        don't need to do anything, just install the extension and enjoy reading
+        📖.
+      </p>
+      <p>
+        To use this extension, you need to grant it permission 🔒 to access your
+        browsing data on Medium.com. This is necessary for the extension to
+        detect and redirect the articles. We do not collect or store any of your
+        data.
+      </p>
+      <p>
+        Crafted this extension for fun over the weekend! If you can, support
+        authors by subscribing to Medium Pro 🙌.
+      </p>
+      <p>
+        If you like this extension, You can also star 🌟 the below repository
+        (or better contribute & fix bugs there).
+      </p>
+
+      <a href="https://github.com/yashjoshi-dotcom/LinkLift-Firefox" class="button" target="_blank">
+        Check out on
+        <img src="./assets/github-mark-white.png" alt="" />
+      </a>
+      <div class="footer">
+        <p>LinkLift Unblocker © 2023. MIT License. 📜</p>
+      </div>
+    </div>
+  </body>
+</html>
